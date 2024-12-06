@@ -1,0 +1,19 @@
+{
+  "item.flowersandtrowels.wooden_trowel": "Wooden Trowel",
+  "item.flowersandtrowels.trowel": "Trowel",
+  "block.flowersandtrowels.prepared_dirt": "Prepared Dirt",
+  "block.flowersandtrowels.flower_basket": "Flower Basket",
+  "block.flowersandtrowels.allium_cluster": "Allium Cluster",
+  "block.flowersandtrowels.azure_bluet_cluster": "Azure Bluet Cluster",
+  "block.flowersandtrowels.blue_orchid_cluster": "Blue Orchid Cluster",
+  "block.flowersandtrowels.cornflower_cluster": "Cornflower Cluster",
+  "block.flowersandtrowels.dandelion_cluster": "Dandelion Cluster",
+  "block.flowersandtrowels.lily_of_the_valley_cluster": "Lily of the Valley Cluster",
+  "block.flowersandtrowels.oxeye_daisy_cluster": "Oxeye Daisy Cluster",
+  "block.flowersandtrowels.poppy_cluster": "Poppy Cluster",
+  "block.flowersandtrowels.orange_tulip_cluster": "Orange Tulip Cluster",
+  "block.flowersandtrowels.pink_tulip_cluster": "Pink Tulip Cluster",
+  "block.flowersandtrowels.red_tulip_cluster": "Red Tulip Cluster",
+  "block.flowersandtrowels.white_tulip_cluster": "White Tulip Cluster",
+  "creativetab.flowersandtrowels.mod_items": "Seeds and Trowels"
+}

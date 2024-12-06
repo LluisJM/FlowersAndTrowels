@@ -1,0 +1,9 @@
+// 1.21.1	2024-12-06T13:31:24.7071424	Recipes
+aba0ae363e30148931263fe38218e0948c746f1f data/flowersandtrowels/advancement/recipes/building_blocks/dirt.json
+099a6d2f548e12d97764c69d20cfc89940b283e6 data/flowersandtrowels/advancement/recipes/misc/flower_basket.json
+f2b001e76d1a8a032c5757a62daff3e0da36aead data/flowersandtrowels/advancement/recipes/tools/trowel.json
+5b0537ca62eecd5fb83e7b8f5df113470f945d55 data/flowersandtrowels/advancement/recipes/tools/wooden_trowel.json
+cffebb4a3f3d2f30f293026daa8e69e998eb127a data/flowersandtrowels/recipe/dirt.json
+e28204510fd3bb0279b6c531f2d74c6e0e349489 data/flowersandtrowels/recipe/flower_basket.json
+df5ba791a34c46c2244c65867a0bca8c585e8850 data/flowersandtrowels/recipe/trowel.json
+7d88830a01b5767719b0d7a7023e29c63cc1eb6c data/flowersandtrowels/recipe/wooden_trowel.json
