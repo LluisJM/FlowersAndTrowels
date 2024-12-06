@@ -1,6 +1,8 @@
-package net.lluisjm.seedsandtrowels;
+package net.lluisjm.flowersandtrowels;
 
-import net.lluisjm.seedsandtrowels.item.ModItems;
+import net.lluisjm.flowersandtrowels.block.ModBlocks;
+import net.lluisjm.flowersandtrowels.item.ModCreativeModeTabs;
+import net.lluisjm.flowersandtrowels.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
@@ -19,18 +21,18 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
-@Mod(SeedsAndTrowels.MOD_ID)
-public class SeedsAndTrowels
+@Mod(FlowersAndTrowels.MOD_ID)
+public class FlowersAndTrowels
 {
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "seedsandtrowels";
+    public static final String MOD_ID = "flowersandtrowels";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
-    public SeedsAndTrowels(IEventBus modEventBus, ModContainer modContainer) {
+    public FlowersAndTrowels(IEventBus modEventBus, ModContainer modContainer) {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -39,7 +41,10 @@ public class SeedsAndTrowels
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -56,6 +61,26 @@ public class SeedsAndTrowels
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.WOODEN_TROWEL);
+            event.accept(ModItems.TROWEL);
+        }
+        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.PREPARED_DIRT);
+
+            event.accept(ModBlocks.ALLIUM_CLUSTER);
+            event.accept(ModBlocks.AZURE_BLUET_CLUSTER);
+            event.accept(ModBlocks.BLUE_ORCHID_CLUSTER);
+            event.accept(ModBlocks.CORNFLOWER_CLUSTER);
+            event.accept(ModBlocks.DANDELION_CLUSTER);
+            event.accept(ModBlocks.LILY_OF_THE_VALLEY_CLUSTER);
+            event.accept(ModBlocks.OXEYE_DAISY_CLUSTER);
+            event.accept(ModBlocks.POPPY_CLUSTER);
+            event.accept(ModBlocks.ORANGE_TULIP_CLUSTER);
+            event.accept(ModBlocks.PINK_TULIP_CLUSTER);
+            event.accept(ModBlocks.RED_TULIP_CLUSTER);
+            event.accept(ModBlocks.WHITE_TULIP_CLUSTER);
+        }
+        if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+            event.accept(ModBlocks.FLOWER_BASKET);
         }
     }
 
