@@ -1,0 +1,5 @@
+// 1.21.1	2024-12-06T14:16:32.7191285	Tags for minecraft:block mod id flowersandtrowels
+81722ee25c15d03956babc8fb90c4fb256feef33 data/minecraft/tags/block/dirt.json
+bc1d7f89c51ecdee4a54e437ff95b3dd5fad5bf5 data/minecraft/tags/block/mineable/axe.json
+1fbeea0f70dea6c8be10059c91cc8d08292dc8a4 data/minecraft/tags/block/mineable/shovel.json
+6051eaa22ce7da2f9e88cf2f0e926ac6d9d8c4e2 data/flowersandtrowels/tags/block/mineable_with_trowel.json

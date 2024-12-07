@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "flowersandtrowels:block/prepared_dirt"
+  }
+}

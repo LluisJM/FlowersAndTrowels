@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "flowersandtrowels:item/azure_bluet_cluster"
+  }
+}
