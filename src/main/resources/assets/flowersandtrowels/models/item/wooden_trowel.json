@@ -1,0 +1,6 @@
+{
+  "parent": "flowersandtrowels:item/trowel",
+  "textures": {
+    "layer0": "flowersandtrowels:item/wooden_trowel"
+  }
+}

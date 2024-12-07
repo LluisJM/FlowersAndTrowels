@@ -39,17 +39,26 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private void blockBottomTopWithItem(DeferredBlock<?> deferredBlock) {
         String path = deferredBlock.getId().getPath();
         simpleBlockWithItem(deferredBlock.get(), itemModels().cubeBottomTop(
-                "flowersandtrowels:block/" + path,
-                ResourceLocation.fromNamespaceAndPath(FlowersAndTrowels.MOD_ID, "block/" + path + "_side"),
+                blockTexture(deferredBlock.get()).toString(),
+                extend(blockTexture(deferredBlock.get()), "_side"),
+                extend(blockTexture(deferredBlock.get()), "_bottom"),
+                extend(blockTexture(deferredBlock.get()), "_top")
+                /*ResourceLocation.fromNamespaceAndPath(FlowersAndTrowels.MOD_ID, "block/" + path + "_side"),
                 ResourceLocation.fromNamespaceAndPath(FlowersAndTrowels.MOD_ID, "block/" + path + "_bottom"),
-                ResourceLocation.fromNamespaceAndPath(FlowersAndTrowels.MOD_ID, "block/" + path + "_top")
+                ResourceLocation.fromNamespaceAndPath(FlowersAndTrowels.MOD_ID, "block/" + path + "_top")*/
         ));
     }
     private void blockCrossWithItem(DeferredBlock<?> deferredBlock) {
         String path = deferredBlock.getId().getPath();
         simpleBlock(deferredBlock.get(), itemModels().cross(
-                "flowersandtrowels:block/" + path,
-                ResourceLocation.fromNamespaceAndPath(FlowersAndTrowels.MOD_ID, "item/" + path)
+                blockTexture(deferredBlock.get()).toString(),
+                ResourceLocation.fromNamespaceAndPath(FlowersAndTrowels.MOD_ID, "block/" + path)
         ).renderType("minecraft:cutout"));
+    }
+
+    private ResourceLocation extend(ResourceLocation resourceLocation, String suffix) {
+        String namespace = resourceLocation.getNamespace();
+        String path = resourceLocation.getPath();
+        return ResourceLocation.fromNamespaceAndPath(namespace, path + suffix);
     }
 }

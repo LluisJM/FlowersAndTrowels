@@ -2,6 +2,7 @@ package net.lluisjm.flowersandtrowels.block;
 
 import net.lluisjm.flowersandtrowels.FlowersAndTrowels;
 import net.lluisjm.flowersandtrowels.block.custom.FlowerBasketBlock;
+import net.lluisjm.flowersandtrowels.block.custom.FlowerClusterBlock;
 import net.lluisjm.flowersandtrowels.item.ModItems;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
@@ -22,51 +23,51 @@ public class ModBlocks {
 
     // FLOWER CLUSTERS
     public static final DeferredBlock<Block> ALLIUM_CLUSTER = registerBlock("allium_cluster",
-            () -> new FlowerBlock(MobEffects.FIRE_RESISTANCE, 6.0F, BlockBehaviour.Properties.of()
+            () -> new FlowerClusterBlock(MobEffects.FIRE_RESISTANCE, 6.0F, BlockBehaviour.Properties.of()
                     .mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS)
                     .pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> AZURE_BLUET_CLUSTER = registerBlock("azure_bluet_cluster",
-            () -> new FlowerBlock(MobEffects.JUMP, 5.0F, BlockBehaviour.Properties.of()
+            () -> new FlowerClusterBlock(MobEffects.JUMP, 5.0F, BlockBehaviour.Properties.of()
                     .mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS)
                     .pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> BLUE_ORCHID_CLUSTER = registerBlock("blue_orchid_cluster",
-            () -> new FlowerBlock(MobEffects.JUMP, 5.0F, BlockBehaviour.Properties.of()
+            () -> new FlowerClusterBlock(MobEffects.JUMP, 5.0F, BlockBehaviour.Properties.of()
                     .mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS)
                     .pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> CORNFLOWER_CLUSTER = registerBlock("cornflower_cluster",
-            () -> new FlowerBlock(MobEffects.JUMP, 5.0F, BlockBehaviour.Properties.of()
+            () -> new FlowerClusterBlock(MobEffects.JUMP, 5.0F, BlockBehaviour.Properties.of()
                     .mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS)
                     .pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> DANDELION_CLUSTER = registerBlock("dandelion_cluster",
-            () -> new FlowerBlock(MobEffects.SATURATION, 0.7F, BlockBehaviour.Properties.of()
+            () -> new FlowerClusterBlock(MobEffects.SATURATION, 0.7F, BlockBehaviour.Properties.of()
                     .mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS)
                     .pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> LILY_OF_THE_VALLEY_CLUSTER = registerBlock("lily_of_the_valley_cluster",
-            () -> new FlowerBlock(MobEffects.JUMP, 5.0F, BlockBehaviour.Properties.of()
+            () -> new FlowerClusterBlock(MobEffects.JUMP, 5.0F, BlockBehaviour.Properties.of()
                     .mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS)
                     .pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> OXEYE_DAISY_CLUSTER = registerBlock("oxeye_daisy_cluster",
-            () -> new FlowerBlock(MobEffects.REGENERATION, 14.0F, BlockBehaviour.Properties.of()
+            () -> new FlowerClusterBlock(MobEffects.REGENERATION, 14.0F, BlockBehaviour.Properties.of()
                     .mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS)
                     .pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> POPPY_CLUSTER = registerBlock("poppy_cluster",
-            () -> new FlowerBlock(MobEffects.NIGHT_VISION, 10.0F, BlockBehaviour.Properties.of()
+            () -> new FlowerClusterBlock(MobEffects.NIGHT_VISION, 10.0F, BlockBehaviour.Properties.of()
                     .mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS)
                     .pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> ORANGE_TULIP_CLUSTER = registerBlock("orange_tulip_cluster",
-            () -> new FlowerBlock(MobEffects.JUMP, 5.0F, BlockBehaviour.Properties.of()
+            () -> new FlowerClusterBlock(MobEffects.JUMP, 5.0F, BlockBehaviour.Properties.of()
                     .mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS)
                     .pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> PINK_TULIP_CLUSTER = registerBlock("pink_tulip_cluster",
-            () -> new FlowerBlock(MobEffects.JUMP, 5.0F, BlockBehaviour.Properties.of()
+            () -> new FlowerClusterBlock(MobEffects.JUMP, 5.0F, BlockBehaviour.Properties.of()
                     .mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS)
                     .pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> RED_TULIP_CLUSTER = registerBlock("red_tulip_cluster",
-            () -> new FlowerBlock(MobEffects.JUMP, 5.0F, BlockBehaviour.Properties.of()
+            () -> new FlowerClusterBlock(MobEffects.JUMP, 5.0F, BlockBehaviour.Properties.of()
                     .mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS)
                     .pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> WHITE_TULIP_CLUSTER = registerBlock("white_tulip_cluster",
-            () -> new FlowerBlock(MobEffects.JUMP, 5.0F, BlockBehaviour.Properties.of()
+            () -> new FlowerClusterBlock(MobEffects.JUMP, 5.0F, BlockBehaviour.Properties.of()
                     .mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS)
                     .pushReaction(PushReaction.DESTROY)));
 
