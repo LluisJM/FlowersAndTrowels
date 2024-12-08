@@ -16,8 +16,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.PREPARED_DIRT);
-        //blockWithItem(ModBlocks.FLOWER_BASKET);
-        blockBottomTopWithItem(ModBlocks.FLOWER_BASKET);
+        //blockBottomTopWithItem(ModBlocks.FLOWER_BASKET);
 
         blockCrossWithItem(ModBlocks.ALLIUM_CLUSTER);
         blockCrossWithItem(ModBlocks.AZURE_BLUET_CLUSTER);
@@ -43,9 +42,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 extend(blockTexture(deferredBlock.get()), "_side"),
                 extend(blockTexture(deferredBlock.get()), "_bottom"),
                 extend(blockTexture(deferredBlock.get()), "_top")
-                /*ResourceLocation.fromNamespaceAndPath(FlowersAndTrowels.MOD_ID, "block/" + path + "_side"),
-                ResourceLocation.fromNamespaceAndPath(FlowersAndTrowels.MOD_ID, "block/" + path + "_bottom"),
-                ResourceLocation.fromNamespaceAndPath(FlowersAndTrowels.MOD_ID, "block/" + path + "_top")*/
         ));
     }
     private void blockCrossWithItem(DeferredBlock<?> deferredBlock) {
@@ -55,6 +51,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 ResourceLocation.fromNamespaceAndPath(FlowersAndTrowels.MOD_ID, "block/" + path)
         ).renderType("minecraft:cutout"));
     }
+    /*private void existingBlockItem(DeferredBlock<?> deferredBlock) {
+        simpleBlockItem(deferredBlock.get(),
+                itemModels().withExistingParent(
+                        blockTexture(deferredBlock.get()).toString(),
+                        deferredBlock.get().asItem().toString()));
+    }*/
 
     private ResourceLocation extend(ResourceLocation resourceLocation, String suffix) {
         String namespace = resourceLocation.getNamespace();

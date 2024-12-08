@@ -4,16 +4,25 @@ import net.lluisjm.flowersandtrowels.block.ModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.Map;
 
 public class FlowerBasketBlock extends Block {
+    protected static final VoxelShape SHAPE;
+
+    @Override
+    protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+        return SHAPE;
+    }
 
     public static final int MAX_AGE = 5;
     public static final IntegerProperty FLOWER_AGE = IntegerProperty.create("flower_age", 0, 5);
@@ -26,9 +35,6 @@ public class FlowerBasketBlock extends Block {
                 //.setValue(PREPARED, false));
     }
 
-    public IntegerProperty getAgeProperty() {
-        return FLOWER_AGE;
-    }
     private static final Map<Block, Block> FLOWER_MAP =
             Map.ofEntries(
                     Map.entry(Blocks.ALLIUM, ModBlocks.ALLIUM_CLUSTER.get()),
@@ -83,5 +89,9 @@ public class FlowerBasketBlock extends Block {
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(FLOWER_AGE);
+    }
+
+    static {
+        SHAPE = Block.box(0.0F, 0.0F, 0.0F, 16.0F, 17.0F, 16.0F);
     }
 }
