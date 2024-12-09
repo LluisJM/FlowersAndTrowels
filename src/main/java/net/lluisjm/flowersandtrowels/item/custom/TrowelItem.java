@@ -1,6 +1,7 @@
 package net.lluisjm.flowersandtrowels.item.custom;
 
 import net.lluisjm.flowersandtrowels.block.ModBlocks;
+import net.lluisjm.flowersandtrowels.util.ModParticleUtils;
 import net.lluisjm.flowersandtrowels.util.ModTags;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
@@ -10,7 +11,6 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
@@ -53,7 +53,7 @@ public class TrowelItem extends DiggerItem {
             Vec3 pos = blockPos.getCenter().add(0.0F, 0.5F, 0.0F);
             Random random = new Random();
             for (int i = 0; i < 40; i++) {
-                Vec3 randomPos = vec3OffsetRandomHorizontal(pos, random);
+                Vec3 randomPos = ModParticleUtils.offsetRandomHorizontal(pos, random);
                 //Vec3 randomPos = pos;
                 level.addParticle(new BlockParticleOption(ParticleTypes.BLOCK, DIG_MAP.get(clickedBlock).defaultBlockState()),
                         randomPos.x, randomPos.y, randomPos.z, 0.0F, random.nextDouble() * 5.0F, 0.0F);
@@ -76,11 +76,5 @@ public class TrowelItem extends DiggerItem {
         }
 
         return InteractionResult.PASS;
-    }
-
-    public Vec3 vec3OffsetRandomHorizontal(Vec3 vec3, Random random) {
-        double xOffset = random.nextDouble() - 0.5F;
-        double zOffset = random.nextDouble() - 0.5F;
-        return vec3.add(xOffset,0.0F, zOffset);
     }
 }
