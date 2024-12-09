@@ -1,0 +1,47 @@
+{
+    "type": "minecraft:flower",
+    "config": {
+      "tries": 15,
+      "xz_spread": 2,
+      "y_spread": 1,
+      "feature": {
+        "feature": {
+          "config": {
+            "to_place": {
+              "type": "minecraft:noise_threshold_provider",
+              "seed": 1061282866,
+              "noise": {
+                "firstOctave": 0,
+                "amplitudes": []
+              },
+              "scale": 2,
+              "threshold": -0.8,
+              "high_chance": 0.3,
+              "default_state": {
+                "Name": "minecraft:oxeye_daisy"
+              },
+              "low_states": [],
+              "high_states": [
+                {
+                  "Name": "minecraft:oxeye_daisy"
+                },
+                {
+                  "Name": "flowersandtrowels:oxeye_daisy_cluster"
+                }
+              ]
+            }
+          },
+          "type": "minecraft:simple_block"
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "air"
+            }
+          }
+        ]
+      }
+    }
+  }
