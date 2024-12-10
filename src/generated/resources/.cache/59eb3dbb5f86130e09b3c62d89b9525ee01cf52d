@@ -1,7 +1,8 @@
-// 1.21.1	2024-12-06T18:46:40.1080302	Loot Tables
+// 1.21.1	2024-12-09T22:24:50.1813913	Loot Tables
 d8438626a70986a2db3424143f66e3b5995562c1 data/flowersandtrowels/loot_table/blocks/allium_cluster.json
 a4f1bbdb0446f78350eb5d9bddaac4fbb3411776 data/flowersandtrowels/loot_table/blocks/azure_bluet_cluster.json
 16bfff74320352603361a2fda66818f9a7c9af94 data/flowersandtrowels/loot_table/blocks/blue_orchid_cluster.json
+0195c80d71fc11d0562de203a565ba0c425a772f data/flowersandtrowels/loot_table/blocks/chamomile_daises.json
 a03fe4a29cbd9138f61c3dd90e79dcdd84a1c0d2 data/flowersandtrowels/loot_table/blocks/cornflower_cluster.json
 9c02985551eee13262f86cbeaea29d953cc34f67 data/flowersandtrowels/loot_table/blocks/dandelion_cluster.json
 9c68cfe2b6183f4f08ec4ac4326cf62b76fe59d6 data/flowersandtrowels/loot_table/blocks/flower_basket.json

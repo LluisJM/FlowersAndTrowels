@@ -39,6 +39,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.DIRT)
                 .add(ModBlocks.PREPARED_DIRT.get())
                 .add(ModBlocks.FLOWER_BASKET.get());
+
         tag(BlockTags.FLOWERS)
                 .add(ModBlocks.ALLIUM_CLUSTER.get())
                 .add(ModBlocks.AZURE_BLUET_CLUSTER.get())
@@ -51,6 +52,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.ORANGE_TULIP_CLUSTER.get())
                 .add(ModBlocks.PINK_TULIP_CLUSTER.get())
                 .add(ModBlocks.RED_TULIP_CLUSTER.get())
-                .add(ModBlocks.WHITE_TULIP_CLUSTER.get());
+                .add(ModBlocks.WHITE_TULIP_CLUSTER.get())
+                .add(ModBlocks.CHAMOMILE_DAISIES.get());
     }
 }

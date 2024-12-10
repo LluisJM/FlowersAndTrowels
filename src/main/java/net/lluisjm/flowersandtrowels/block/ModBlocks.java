@@ -71,6 +71,11 @@ public class ModBlocks {
                     .mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS)
                     .pushReaction(PushReaction.DESTROY)));
 
+    public static final DeferredBlock<Block> CHAMOMILE_DAISIES = registerBlock("chamomile_daises",
+            () -> new PinkPetalsBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS)
+                    .pushReaction(PushReaction.DESTROY)));
+
     // MISC BLOCKS
     public static final DeferredBlock<Block> PREPARED_DIRT = registerBlock("prepared_dirt",
             () -> new Block(BlockBehaviour.Properties.of()

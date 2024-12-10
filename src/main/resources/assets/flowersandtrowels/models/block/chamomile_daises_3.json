@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/flowerbed_3",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "flowerbed": "flowersandtrowels:block/chamomile_daises",
+    "stem": "flowersandtrowels:block/chamomile_daises_stem"
+  }
+}

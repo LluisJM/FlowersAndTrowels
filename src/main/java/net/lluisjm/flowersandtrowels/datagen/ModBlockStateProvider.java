@@ -35,6 +35,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private void blockWithItem(DeferredBlock<?> deferredBlock) {
         simpleBlockWithItem(deferredBlock.get(), cubeAll(deferredBlock.get()));
     }
+
     private void blockBottomTopWithItem(DeferredBlock<?> deferredBlock) {
         String path = deferredBlock.getId().getPath();
         simpleBlockWithItem(deferredBlock.get(), itemModels().cubeBottomTop(
@@ -44,6 +45,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 extend(blockTexture(deferredBlock.get()), "_top")
         ));
     }
+
     private void blockCrossWithItem(DeferredBlock<?> deferredBlock) {
         String path = deferredBlock.getId().getPath();
         simpleBlock(deferredBlock.get(), itemModels().cross(

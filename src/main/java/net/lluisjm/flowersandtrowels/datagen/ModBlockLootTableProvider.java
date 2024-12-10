@@ -52,6 +52,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createFlowerClusterDrops(ModBlocks.RED_TULIP_CLUSTER.get(), Blocks.RED_TULIP, 3, 5));
         add(ModBlocks.WHITE_TULIP_CLUSTER.get(),
                 block -> createFlowerClusterDrops(ModBlocks.WHITE_TULIP_CLUSTER.get(), Blocks.WHITE_TULIP, 3, 5));
+
+        add(ModBlocks.CHAMOMILE_DAISIES.get(),
+                block -> createPetalsDrops(ModBlocks.CHAMOMILE_DAISIES.get()));
     }
 
     protected LootTable.Builder createFlowerClusterDrops(Block flowerClusterBlock, Block flowerBlock, float minDrops, float maxDrops) {
