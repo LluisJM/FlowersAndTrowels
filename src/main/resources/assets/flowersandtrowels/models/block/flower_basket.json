@@ -1,6 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:block/cube_bottom_top",
+	"texture_size": [16, 17],
 	"textures": {
 		"bottom": "flowersandtrowels:block/flower_basket_bottom",
 		"side": "flowersandtrowels:block/flower_basket_side",
@@ -11,10 +12,10 @@
 			"from": [0, 0, 0],
 			"to": [16, 16, 16],
 			"faces": {
-				"north": {"uv": [0, 0, 16, 16], "texture": "#side"},
-				"east": {"uv": [0, 0, 16, 16], "texture": "#side"},
-				"south": {"uv": [0, 0, 16, 16], "texture": "#side"},
-				"west": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"north": {"uv": [0, 0.94118, 16, 16], "texture": "#side"},
+				"east": {"uv": [0, 0.94118, 16, 16], "texture": "#side"},
+				"south": {"uv": [0, 0.94118, 16, 16], "texture": "#side"},
+				"west": {"uv": [0, 0.94118, 16, 16], "texture": "#side"},
 				"up": {"uv": [0, 0, 16, 16], "texture": "#top"},
 				"down": {"uv": [0, 0, 16, 16], "texture": "#bottom"}
 			}
@@ -24,7 +25,7 @@
 			"to": [3, 17, 16],
 			"rotation": {"angle": 0, "axis": "y", "origin": [0, 16, 0]},
 			"faces": {
-				"north": {"uv": [0, 0, 3, 1], "texture": "#side"},
+				"north": {"uv": [13, 0, 16, 1], "texture": "#side"},
 				"east": {"uv": [0, 0, 16, 1], "texture": "#side"},
 				"south": {"uv": [0, 0, 3, 1], "texture": "#side"},
 				"west": {"uv": [0, 0, 16, 1], "texture": "#side"},
@@ -37,7 +38,7 @@
 			"to": [16, 17, 16],
 			"rotation": {"angle": 0, "axis": "y", "origin": [13, 16, 0]},
 			"faces": {
-				"north": {"uv": [13, 0, 16, 1], "texture": "#side"},
+				"north": {"uv": [0, 0, 3, 1], "texture": "#side"},
 				"east": {"uv": [0, 0, 16, 1], "texture": "#side"},
 				"south": {"uv": [13, 0, 16, 1], "texture": "#side"},
 				"west": {"uv": [0, 0, 16, 1], "texture": "#side"},
@@ -50,7 +51,7 @@
 			"to": [13, 17, 3],
 			"rotation": {"angle": 0, "axis": "y", "origin": [3, 16, 0]},
 			"faces": {
-				"north": {"uv": [0, 0, 10, 1], "texture": "#side"},
+				"north": {"uv": [3, 0, 13, 1], "texture": "#side"},
 				"east": {"uv": [0, 0, 3, 1], "texture": "#side"},
 				"south": {"uv": [3, 0, 13, 1], "texture": "#side"},
 				"west": {"uv": [0, 0, 3, 1], "texture": "#side"},
@@ -71,5 +72,6 @@
 				"down": {"uv": [0, 0, 10, 3], "texture": "#missing"}
 			}
 		}
-	]
+	],
+	"display": {}
 }
