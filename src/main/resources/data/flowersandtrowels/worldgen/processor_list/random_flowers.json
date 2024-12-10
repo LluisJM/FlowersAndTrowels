@@ -1,0 +1,177 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "flowersandtrowels:dandelion_cluster"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "flowersandtrowels:dandelion_cluster",
+            "probability": 0.08
+          },
+          "output_state": {
+            "Name": "flowersandtrowels:dandelion_cluster"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "flowersandtrowels:dandelion_cluster"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "flowersandtrowels:dandelion_cluster",
+            "probability": 0.08
+          },
+          "output_state": {
+            "Name": "flowersandtrowels:poppy_cluster"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "flowersandtrowels:dandelion_cluster"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "flowersandtrowels:dandelion_cluster",
+            "probability": 0.08
+          },
+          "output_state": {
+            "Name": "flowersandtrowels:cornflower_cluster"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "flowersandtrowels:dandelion_cluster"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "flowersandtrowels:dandelion_cluster",
+            "probability": 0.08
+          },
+          "output_state": {
+            "Name": "flowersandtrowels:azure_bluet_cluster"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "flowersandtrowels:dandelion_cluster"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "flowersandtrowels:dandelion_cluster",
+            "probability": 0.08
+          },
+          "output_state": {
+            "Name": "flowersandtrowels:oxeye_daisy_cluster"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "flowersandtrowels:dandelion_cluster"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "flowersandtrowels:dandelion_cluster",
+            "probability": 0.08
+          },
+          "output_state": {
+            "Name": "flowersandtrowels:allium_cluster"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "flowersandtrowels:dandelion_cluster"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "flowersandtrowels:dandelion_cluster",
+            "probability": 0.08
+          },
+          "output_state": {
+            "Name": "flowersandtrowels:blue_orchid_cluster"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "flowersandtrowels:dandelion_cluster"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "flowersandtrowels:dandelion_cluster",
+            "probability": 0.08
+          },
+          "output_state": {
+            "Name": "flowersandtrowels:lily_of_the_valley_cluster"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "flowersandtrowels:dandelion_cluster"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "flowersandtrowels:dandelion_cluster",
+            "probability": 0.08
+          },
+          "output_state": {
+            "Name": "flowersandtrowels:white_tulip_cluster"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "flowersandtrowels:dandelion_cluster"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "flowersandtrowels:dandelion_cluster",
+            "probability": 0.08
+          },
+          "output_state": {
+            "Name": "flowersandtrowels:pink_tulip_cluster"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "flowersandtrowels:dandelion_cluster"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "flowersandtrowels:dandelion_cluster",
+            "probability": 0.08
+          },
+          "output_state": {
+            "Name": "flowersandtrowels:red_tulip_cluster"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "flowersandtrowels:dandelion_cluster"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "flowersandtrowels:dandelion_cluster",
+            "probability": 0.08
+          },
+          "output_state": {
+            "Name": "flowersandtrowels:orange_tulip_cluster"
+          }
+        }
+      ]
+    }
+  ]
+}
