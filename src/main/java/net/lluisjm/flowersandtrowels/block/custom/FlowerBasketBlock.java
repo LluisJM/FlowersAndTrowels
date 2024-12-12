@@ -40,6 +40,11 @@ public class FlowerBasketBlock extends Block {
         return SHAPE;
     }
 
+    @Override
+    public @Nullable PathType getBlockPathType(BlockState state, BlockGetter level, BlockPos pos, @Nullable Mob mob) {
+        return PathType.BLOCKED;
+    }
+
     public static final int MAX_AGE = 5;
     public static final IntegerProperty FLOWER_AGE = IntegerProperty.create("flower_age", 0, 5);
     // public static final BooleanProperty PREPARED = BooleanProperty.create("prepared");
