@@ -53,15 +53,15 @@ public class ModEvents {
 
             // JOURNEYMAN / Slot 5
             trades.get(3).add((entity, randomSource) -> emeraldForItems(
-                    2, Items.CORNFLOWER, 8, 4, 5, 0.02F));
-            trades.get(3).add((entity, randomSource) -> emeraldForItems(
-                    2, Items.ALLIUM, 8, 4, 5, 0.02F));
-            trades.get(3).add((entity, randomSource) -> emeraldForItems(
-                    2, Items.LILY_OF_THE_VALLEY, 8, 4, 5, 0.02F));
+                    4, Items.FLOWER_POT, 16, 4, 5, 0.02F));
 
             // EXPERT / Slot 6
-            trades.get(4).add((entity, randomSource) -> itemForEmeralds(
-                    4, Items.BLUE_ORCHID, 16, 4, 5, 0.02F));
+            trades.get(4).add((entity, randomSource) -> emeraldForItems(
+                    2, Items.CORNFLOWER, 8, 4, 5, 0.02F));
+            trades.get(4).add((entity, randomSource) -> emeraldForItems(
+                    2, Items.ALLIUM, 8, 4, 5, 0.02F));
+            trades.get(4).add((entity, randomSource) -> emeraldForItems(
+                    2, Items.LILY_OF_THE_VALLEY, 8, 4, 5, 0.02F));
 
             // MASTER / Slot 7
             trades.get(5).add((entity, randomSource) -> emeraldForItems(
