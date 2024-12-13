@@ -23,6 +23,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.WOODEN_TROWEL);
                         output.accept(ModItems.TROWEL);
 
+                        // FOODS & DRINKS
+                        output.accept(ModItems.CHAMOMILE_TEA);
+
                         // BLOCKS
                         output.accept(ModBlocks.PREPARED_DIRT);
                         output.accept(ModBlocks.FLOWER_BASKET);
@@ -40,6 +43,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.PINK_TULIP_CLUSTER);
                         output.accept(ModBlocks.RED_TULIP_CLUSTER);
                         output.accept(ModBlocks.WHITE_TULIP_CLUSTER);
+                        output.accept(ModBlocks.CHAMOMILE_DAISIES);
                     }).build());
 
     public static void register(IEventBus eventBus) {

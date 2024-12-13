@@ -78,9 +78,14 @@ public class FlowersAndTrowels
             event.accept(ModBlocks.PINK_TULIP_CLUSTER);
             event.accept(ModBlocks.RED_TULIP_CLUSTER);
             event.accept(ModBlocks.WHITE_TULIP_CLUSTER);
+
+            event.accept(ModBlocks.CHAMOMILE_DAISIES);
         }
         if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
             event.accept(ModBlocks.FLOWER_BASKET);
+        }
+        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.CHAMOMILE_TEA);
         }
     }
 
