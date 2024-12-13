@@ -2,6 +2,7 @@ package net.lluisjm.flowersandtrowels.datagen;
 
 import net.lluisjm.flowersandtrowels.FlowersAndTrowels;
 import net.lluisjm.flowersandtrowels.block.ModBlocks;
+import net.lluisjm.flowersandtrowels.item.ModItems;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -34,7 +35,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         flatBlockItem(ModBlocks.WHITE_TULIP_CLUSTER.asItem());
 
         flatBlockItem(ModBlocks.CHAMOMILE_DAISIES.asItem());
-
+        basicItem(ModItems.CHAMOMILE_TEA.get());
     }
 
     private ItemModelBuilder flatBlockItem(Item item) {

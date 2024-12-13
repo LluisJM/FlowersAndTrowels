@@ -1,6 +1,7 @@
 package net.lluisjm.flowersandtrowels.item;
 
 import net.lluisjm.flowersandtrowels.FlowersAndTrowels;
+import net.lluisjm.flowersandtrowels.item.custom.TeaItem;
 import net.lluisjm.flowersandtrowels.item.custom.TrowelItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Tiers;
@@ -16,6 +17,9 @@ public class ModItems {
             () -> new TrowelItem(Tiers.WOOD, new Item.Properties().durability(12)));
     public static final DeferredItem<Item> TROWEL = ITEMS.register("trowel",
             () -> new TrowelItem(Tiers.IRON, new Item.Properties().durability(32)));
+
+    public static final DeferredItem<Item> CHAMOMILE_TEA = ITEMS.register("chamomile_tea",
+            () -> new TeaItem(new Item.Properties().food(ModFoodProperties.CHAMOMILE_TEA)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
