@@ -1,25 +1,39 @@
+This is the first beta release of this mod.
 
-Installation information
-=======
+# Features
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+## Blocks
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+- Flower Clusters
+  - Allium Cluster
+  - Azure Bluet Cluster
+  - Blue Orchid Cluster
+  - Cornflower Cluster
+  - Dandelion Cluster
+  - Lily of the Valley Cluster
+  - Oxeye Daisy Cluster
+  - Poppy Cluster
+  - Orange Tulip Cluster
+  - Pink Tulip Cluster
+  - Red Tulip Cluster
+  - White Tulip Cluster
+- Other blocks
+  - Prepared Dirt
+  - Flower Basket
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+## Items
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+- Wooden Trowel
+- Trowel
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+## Functionality
+
+- Trowels can be used to remove the grass, podzol, or mycelium of blocks and turn them into dirt.
+  - Trowels can turn dirt into Prepared Dirt.
+- You can craft a Flower Basket from Prepared Dirt.
+  - You can use Flower Baskets to turn regular flowers into Flower Clusters.
+
+## World Generation
+
+- Flower Clusters generate naturally in plains (coming to other biomes).
+- Flower Clusters generate in villages.
