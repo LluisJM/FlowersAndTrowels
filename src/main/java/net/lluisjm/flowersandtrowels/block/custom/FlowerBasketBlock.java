@@ -4,6 +4,7 @@ import net.lluisjm.flowersandtrowels.block.ModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.entity.Mob;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -11,17 +12,37 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.pathfinder.PathType;
+import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.Map;
 
 public class FlowerBasketBlock extends Block {
+    protected static final VoxelShape OUTER_SHAPE;
     protected static final VoxelShape SHAPE;
 
     @Override
     protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
         return SHAPE;
+    }
+
+    @Override
+    protected VoxelShape getInteractionShape(BlockState state, BlockGetter level, BlockPos pos) {
+        return OUTER_SHAPE;
+    }
+
+    @Override
+    protected VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+        return SHAPE;
+    }
+
+    @Override
+    public @Nullable PathType getBlockPathType(BlockState state, BlockGetter level, BlockPos pos, @Nullable Mob mob) {
+        return PathType.BLOCKED;
     }
 
     public static final int MAX_AGE = 5;
@@ -92,6 +113,11 @@ public class FlowerBasketBlock extends Block {
     }
 
     static {
-        SHAPE = Block.box(0.0F, 0.0F, 0.0F, 16.0F, 17.0F, 16.0F);
+        //SHAPE = Block.box(0.0F, 0.0F, 0.0F, 16.0F, 17.0F, 16.0F);
+        OUTER_SHAPE = Block.box(0.0F, 0.0F, 0.0F, 16.0F, 17.0F, 16.0F);
+        SHAPE = Shapes.join(
+                Block.box(0.0F, 0.0F, 0.0F, 16.0F, 17.0F, 16.0F),
+                Block.box(3.0F, 16.0F, 3.0F, 13.0F, 17.0F, 13.0F),
+                BooleanOp.ONLY_FIRST);
     }
 }
