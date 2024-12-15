@@ -23,6 +23,6 @@ public class FlowerClusterBlock extends FlowerBlock {
     }
 
     static {
-        SHAPE = Block.box(1.0F, 0.0F, 1.0F, 15.0F, 15.0F, 15.0F);
+        SHAPE = Block.box(2.0F, 0.0F, 2.0F, 14.0F, 12.0F, 14.0F);
     }
 }
