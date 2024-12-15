@@ -5,6 +5,7 @@ import net.lluisjm.flowersandtrowels.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 
@@ -17,6 +18,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.PREPARED_DIRT);
         //blockBottomTopWithItem(ModBlocks.FLOWER_BASKET);
+        simpleBlockWithItem(ModBlocks.FLOWER_BASKET.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/flower_basket")));
 
         blockCrossWithItem(ModBlocks.ALLIUM_CLUSTER);
         blockCrossWithItem(ModBlocks.AZURE_BLUET_CLUSTER);
