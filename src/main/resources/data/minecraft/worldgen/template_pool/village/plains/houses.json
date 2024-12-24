@@ -348,7 +348,7 @@
       "element": {
         "element_type": "minecraft:single_pool_element",
         "location": "flowersandtrowels:village/plains/houses/plains_florist_1",
-        "processors": "minecraft:mossify_70_percent",
+        "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },
       "weight": 2
