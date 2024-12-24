@@ -335,7 +335,7 @@
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "flowersandtrowels:village/taiga/houses/taiga_florist_1",
+        "location": "flowersandtrowels:village/snowy/houses/snowy_florist_1",
         "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },
