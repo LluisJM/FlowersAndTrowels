@@ -4,10 +4,8 @@ import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.lluisjm.flowersandtrowels.FlowersAndTrowels;
 import net.lluisjm.flowersandtrowels.block.ModBlocks;
 import net.lluisjm.flowersandtrowels.item.ModItems;
-import net.lluisjm.flowersandtrowels.villager.ModVillagers;
-import net.minecraft.tags.ItemTags;
+import net.lluisjm.flowersandtrowels.villager.ModVillagerProfessions;
 import net.minecraft.world.entity.npc.VillagerTrades;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.trading.ItemCost;
@@ -24,7 +22,7 @@ public class ModEvents {
 
     @SubscribeEvent
     public static void addCustomTrades(VillagerTradesEvent event) {
-        if (event.getType() == ModVillagers.FLORIST.get()) {
+        if (event.getType() == ModVillagerProfessions.FLORIST.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
 
             // NOVICE / Slot 1

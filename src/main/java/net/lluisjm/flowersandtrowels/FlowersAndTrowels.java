@@ -3,7 +3,8 @@ package net.lluisjm.flowersandtrowels;
 import net.lluisjm.flowersandtrowels.block.ModBlocks;
 import net.lluisjm.flowersandtrowels.item.ModCreativeModeTabs;
 import net.lluisjm.flowersandtrowels.item.ModItems;
-import net.lluisjm.flowersandtrowels.villager.ModVillagers;
+import net.lluisjm.flowersandtrowels.villager.ModPoiTypes;
+import net.lluisjm.flowersandtrowels.villager.ModVillagerProfessions;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
@@ -47,7 +48,8 @@ public class FlowersAndTrowels
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
-        ModVillagers.register(modEventBus);
+        ModPoiTypes.register(modEventBus);
+        ModVillagerProfessions.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

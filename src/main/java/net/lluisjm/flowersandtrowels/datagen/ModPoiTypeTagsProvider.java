@@ -19,6 +19,6 @@ public class ModPoiTypeTagsProvider extends PoiTypeTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(PoiTypeTags.ACQUIRABLE_JOB_SITE)
-                .addOptional(ResourceLocation.fromNamespaceAndPath(FlowersAndTrowels.MOD_ID, "florist_poi"));
+                .addOptional(ResourceLocation.fromNamespaceAndPath(FlowersAndTrowels.MOD_ID, "florist"));
     }
 }
