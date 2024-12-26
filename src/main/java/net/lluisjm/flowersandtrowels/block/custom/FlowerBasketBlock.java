@@ -24,6 +24,31 @@ import java.util.Map;
 public class FlowerBasketBlock extends Block {
     protected static final VoxelShape OUTER_SHAPE;
     protected static final VoxelShape SHAPE;
+    public static final int MAX_AGE = 5;
+    public static final IntegerProperty FLOWER_AGE = IntegerProperty.create("flower_age", 0, 5);
+    // public static final BooleanProperty PREPARED = BooleanProperty.create("prepared");
+    private static final Map<Block, Block> FLOWER_MAP =
+            Map.ofEntries(
+                    Map.entry(Blocks.ALLIUM, ModBlocks.ALLIUM_CLUSTER.get()),
+                    Map.entry(Blocks.AZURE_BLUET, ModBlocks.AZURE_BLUET_CLUSTER.get()),
+                    Map.entry(Blocks.BLUE_ORCHID, ModBlocks.BLUE_ORCHID_CLUSTER.get()),
+                    Map.entry(Blocks.CORNFLOWER, ModBlocks.CORNFLOWER_CLUSTER.get()),
+                    Map.entry(Blocks.DANDELION, ModBlocks.DANDELION_CLUSTER.get()),
+                    Map.entry(Blocks.LILY_OF_THE_VALLEY, ModBlocks.LILY_OF_THE_VALLEY_CLUSTER.get()),
+                    Map.entry(Blocks.OXEYE_DAISY, ModBlocks.OXEYE_DAISY_CLUSTER.get()),
+                    Map.entry(Blocks.POPPY, ModBlocks.POPPY_CLUSTER.get()),
+                    Map.entry(Blocks.ORANGE_TULIP, ModBlocks.ORANGE_TULIP_CLUSTER.get()),
+                    Map.entry(Blocks.PINK_TULIP, ModBlocks.PINK_TULIP_CLUSTER.get()),
+                    Map.entry(Blocks.RED_TULIP, ModBlocks.RED_TULIP_CLUSTER.get()),
+                    Map.entry(Blocks.WHITE_TULIP, ModBlocks.WHITE_TULIP_CLUSTER.get())
+            );
+    public FlowerBasketBlock(Properties properties) {
+        super(properties);
+        //this.registerDefaultState((BlockState)((BlockState)this.defaultBlockState().setValue(FLOWER_AGE, 0)).setValue(PREPARED, false));
+        this.registerDefaultState(defaultBlockState()
+                .setValue(FLOWER_AGE, 0));
+                //.setValue(PREPARED, false));
+    }
 
     @Override
     protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
@@ -44,33 +69,6 @@ public class FlowerBasketBlock extends Block {
     public @Nullable PathType getBlockPathType(BlockState state, BlockGetter level, BlockPos pos, @Nullable Mob mob) {
         return PathType.BLOCKED;
     }
-
-    public static final int MAX_AGE = 5;
-    public static final IntegerProperty FLOWER_AGE = IntegerProperty.create("flower_age", 0, 5);
-    // public static final BooleanProperty PREPARED = BooleanProperty.create("prepared");
-    public FlowerBasketBlock(Properties properties) {
-        super(properties);
-        //this.registerDefaultState((BlockState)((BlockState)this.defaultBlockState().setValue(FLOWER_AGE, 0)).setValue(PREPARED, false));
-        this.registerDefaultState(defaultBlockState()
-                .setValue(FLOWER_AGE, 0));
-                //.setValue(PREPARED, false));
-    }
-
-    private static final Map<Block, Block> FLOWER_MAP =
-            Map.ofEntries(
-                    Map.entry(Blocks.ALLIUM, ModBlocks.ALLIUM_CLUSTER.get()),
-                    Map.entry(Blocks.AZURE_BLUET, ModBlocks.AZURE_BLUET_CLUSTER.get()),
-                    Map.entry(Blocks.BLUE_ORCHID, ModBlocks.BLUE_ORCHID_CLUSTER.get()),
-                    Map.entry(Blocks.CORNFLOWER, ModBlocks.CORNFLOWER_CLUSTER.get()),
-                    Map.entry(Blocks.DANDELION, ModBlocks.DANDELION_CLUSTER.get()),
-                    Map.entry(Blocks.LILY_OF_THE_VALLEY, ModBlocks.LILY_OF_THE_VALLEY_CLUSTER.get()),
-                    Map.entry(Blocks.OXEYE_DAISY, ModBlocks.OXEYE_DAISY_CLUSTER.get()),
-                    Map.entry(Blocks.POPPY, ModBlocks.POPPY_CLUSTER.get()),
-                    Map.entry(Blocks.ORANGE_TULIP, ModBlocks.ORANGE_TULIP_CLUSTER.get()),
-                    Map.entry(Blocks.PINK_TULIP, ModBlocks.PINK_TULIP_CLUSTER.get()),
-                    Map.entry(Blocks.RED_TULIP, ModBlocks.RED_TULIP_CLUSTER.get()),
-                    Map.entry(Blocks.WHITE_TULIP, ModBlocks.WHITE_TULIP_CLUSTER.get())
-            );
 
     @Override
     protected void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
